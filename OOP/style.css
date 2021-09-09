@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ostoskori{
+  display: flex;
+  justify-content: center;  
+}
+
+.tuotteet {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ostoskori-maara {
+  margin: 15px 0;
+}
