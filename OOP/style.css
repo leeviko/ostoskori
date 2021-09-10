@@ -14,11 +14,82 @@ body {
 }
 
 .tuotteet {
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.ostoskori-maara {
+  margin: 5px 0;
+}
+
+.new-product {
+  margin: 5px 0;
   display: flex;
   flex-direction: column;
 }
 
-.ostoskori-maara {
-  margin: 15px 0;
+.new-product input {
+  font-family: inherit;
+  margin: 5px 0;
+}
+
+.new-product input[type="text"], input[type="number"] {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.new-product input[type="submit"] {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(21, 72, 167);
+  color: white;
+  transition: 0.2s;
+}
+
+.new-product input[type="submit"]:hover {
+  transform: translateY(-2px);
+  background-color: rgb(17, 46, 126);
+}
+
+.tuote {
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  background-color: rgb(21, 72, 167);
+}
+
+.tuote div {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.tuote span {
+  font-size: 0.9rem;
+}
+
+.tuote-id {
+  display: none;
+}
+
+.poista-btn {
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(167, 21, 21);
+  color: white;
+  transition: 0.2s;
+}
+
+.poista-btn:hover {
+  transform: translateY(-2px);
+  background-color: rgb(126, 17, 17);
 }
